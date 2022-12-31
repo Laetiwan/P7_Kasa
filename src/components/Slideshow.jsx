@@ -36,15 +36,18 @@ const sliderStyles = {
   height: "100%",
 };
 
-const dotsContainerStyles = {
+const countContainerStyles = {
   display: "flex",
   justifyContent: "center",
 };
 
-const dotStyle = {
+const countStyle = {
   margin: "0 3px",
   cursor: "pointer",
   fontSize: "20px",
+  color: "#fff",
+  position: "absolute",
+  top: "90%",  
 };
 
 const Slideshow = ({ slides }) => {
@@ -60,14 +63,15 @@ const Slideshow = ({ slides }) => {
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
-  const goToSlide = (slideIndex) => {
-    setCurrentIndex(slideIndex);
-  };
+  
   const slideStylesWidthBackground = {
     ...slideStyles,
     backgroundImage: `url(${slides[currentIndex]})`,
   };
 
+  console.log("countTab", slides.length)
+  console.log("countTabIndex", currentIndex+1)
+  
   return (
     <div style={sliderStyles}>
       <div>
@@ -79,16 +83,10 @@ const Slideshow = ({ slides }) => {
         </div>
       </div>
       <div style={slideStylesWidthBackground}></div>
-      <div style={dotsContainerStyles}>
-        {slides.map((slide, slideIndex) => (
-          <div
-            style={dotStyle}
-            key={slideIndex}
-            onClick={() => goToSlide(slideIndex)}
-          >
-            ●
+      <div style={countContainerStyles}>
+          <div style={countStyle}>
+            <p>{currentIndex+1}/{slides.length}</p>
           </div>
-        ))}
       </div>
     </div>
   );
