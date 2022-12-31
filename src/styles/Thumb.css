@@ -1,0 +1,52 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    width: 88%; 
+    margin: auto;   
+}
+
+@media screen and (max-width: 767px) {
+    .gallery {
+        width: 86%;                    
+    }
+}
+
+.card {
+    width: 30%;
+    height: 300px;
+    margin-top: 3%;    
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    border-radius: 10px;  
+}
+
+.card a {
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        width: 100%;   
+        margin-bottom: 3%;     
+    }
+}
+
+.card-text {        
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: left;
+    background: linear-gradient(180deg, #0000, #000000ab);
+    padding: 10px;
+    padding-top: 120px;
+    border-radius: 10px; 
+  }
+

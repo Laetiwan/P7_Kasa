@@ -1,0 +1,58 @@
+.no_404 {
+    color: hsl(0, 100%, 69%);      
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 280px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+@media screen and (max-width: 767px) {
+    .no_404 {
+        font-size: 96px;  
+        font-weight: 700;
+        margin-top: 50%;
+
+    }
+}
+
+.text_404 {
+    color: hsl(0, 100%, 69%);      
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 1%;    
+}
+
+@media screen and (max-width: 767px) {
+    .text_404 {
+        font-size: 20px;  
+        font-weight: 500;
+        margin-left: 6%;
+        margin-right: 6%;
+        line-height: 140%;
+    }
+}
+
+.link_404 {
+    color: hsl(0, 100%, 69%);      
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10%;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+    .link_404 {
+        font-size: 14px;  
+        font-weight: 500;
+        margin-top: 30%;
+        text-decoration: underline;    
+    }
+}

@@ -1,0 +1,12 @@
+.container-rating {
+    display: flex;
+    justify-content: right;
+    letter-spacing: -3px;
+    margin-top: 5%;
+    margin-left: 5%;
+    color: #FF6060;    
+}
+
+.star {
+    font-size: 35px;
+}
