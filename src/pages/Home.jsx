@@ -5,18 +5,13 @@ import Thumb from '../components/Thumb'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 
-//import data from '../data/logements.json'; 
-
-//data.forEach(element => console.log(element.id));
-
 function Home() {
   return (
     <div>
       <Header />
       <Banner />          
       <Thumb />
-      <Footer />      
-      
+      <Footer />  
     </div>    
   )
 }

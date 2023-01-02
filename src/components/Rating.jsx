@@ -1,7 +1,5 @@
 import '../styles/Rating.css'
-//import StarRatings from 'react-star-ratings'
 import { MdStarRate } from 'react-icons/md'
-//import Rating from 'react-simple-star-rating'
 
 function Rating(props) {
     let stars = ["", "", "", "", ""]

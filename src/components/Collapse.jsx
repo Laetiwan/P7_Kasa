@@ -5,8 +5,7 @@ import { SlArrowDown, SlArrowUp } from 'react-icons/sl'
 function Collapse(props) {
     const [isOpen, setIsOpen] = useState(false)
     const { title, description } = props
-    console.log("equip", description)
-    
+     
     return isOpen ? (                    
         <div className='collapse-cont'>            
             <div className='collapse-closed'>

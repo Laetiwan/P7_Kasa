@@ -13,8 +13,7 @@ function Header() {
                     <li className={routeLocation.pathname === "/Apropos" ? "active" : ""}><Link to="/Apropos">A propos</Link></li>
                 </ul>
             </nav>   
-        </div>
-        
+        </div>        
     )
 }
 

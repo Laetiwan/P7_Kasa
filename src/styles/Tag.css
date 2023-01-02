@@ -1,8 +1,15 @@
 .tag {    
     display: flex;
     justify-content: flex-start;
-    width: 90%;
+    width: 100%;
     margin-top: 3%;
+}
+
+@media screen and (max-width: 767px) {
+    .tag {
+        width: 100%;   
+        margin-top: 2%;                 
+    }
 }
 
 .tag-name {
@@ -20,4 +27,13 @@
     background: #FF6060;
     border-radius: 10px;    
     margin-right: 3%;
+}
+
+@media screen and (max-width: 767px) {
+    .tag-name {
+        font-weight: 400;
+        font-size: 12px;  
+        padding-top: 3px;
+        padding-bottom: 3px;              
+    }
 }

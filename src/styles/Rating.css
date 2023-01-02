@@ -7,6 +7,21 @@
     color: #FF6060;    
 }
 
+@media screen and (max-width: 767px) {
+    .container-rating {
+        display: flex;
+        justify-content: right;
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+}
+
 .star {
     font-size: 35px;
+}
+
+@media screen and (max-width: 767px) {
+    .star {
+        font-size: 24px;            
+    }
 }

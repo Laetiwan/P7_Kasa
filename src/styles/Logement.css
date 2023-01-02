@@ -1,46 +1,93 @@
-.containerStyles {
-    width: 88%;
+.containerSlides {
+    width: 80%;
     height: 400px;
     margin: 2% auto;    
 }
 
-.containerInfoStyles {
-    display: flex;
-    width: 88%;
-    height: 100px;
-    margin: 2% auto;
-}
-
 @media screen and (max-width: 767px) {
-    .containerInfoStyles {
-        flex-direction: column;
+    .containerSlides {
+        height: 255px;
+        width: 86%;
+        margin: 5% auto 1%;
     }
 }
 
-.containerInfoStylesL {
-    width: 80%;
-    height: 100px;    
-}
-
-@media screen and (max-width: 767px) {
-    .containerInfoStylesL {
-        width: 100%;        
-    }
-}
-
-.containerInfoStylesR {
-    width: 50%;
-    height: 100px;
-}
-
-.containerInfoStylesCollapse {
+.containerInfos {
     display: flex;
-    width: 98%;
+    width: 80%;    
     margin: auto;
 }
 
-.containerInfoStylesCollapseIn {
-    width: 50%;        
+@media screen and (max-width: 767px) {
+    .containerInfos {
+        flex-direction: column;
+        width: 86%;
+        margin: 1% auto;
+    }
+}
+
+.containerInfosL {
+    width: 80%;
+}
+
+@media screen and (max-width: 767px) {
+    .containerInfosL {
+        width: 100%;  
+    }
+}
+
+.containerInfosR {
+    width: 50%;
+    margin: 1% auto;
+}
+
+@media screen and (max-width: 767px) {
+    .containerInfosR {
+        width: 100%; 
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;     
+        margin-top: 5%;
+    }
+}
+
+.containerInfosCollapse {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .containerInfosCollapse {
+        margin: 0% auto 5%;   
+        display: block; 
+        width: 86%;
+    }
+}
+
+.containerInfosCollapseDesc {
+    width: 50%;   
+    display: flex;
+    justify-content: flex-start; 
+}
+
+@media screen and (max-width: 767px) {
+    .containerInfosCollapseDesc {
+        width: 100%; 
+    }
+}
+
+.containerInfosCollapseEquip {
+    width: 50%;    
+    margin-left: 3%;
+}
+
+@media screen and (max-width: 767px) {
+    .containerInfosCollapseEquip {
+        width: 100%; 
+        margin-left: 0%;
+    }
 }
 
 .titreText {
@@ -93,9 +140,23 @@
     margin-right: 2%;
 }
 
+@media screen and (max-width: 767px) {
+    .name-host {
+        font-size: 12px;    
+    }
+}
+
 .img-host {
     margin-left: 2%;
     width: 50px;
     height:50px;
     border-radius: 50%;
+}
+
+@media screen and (max-width: 767px) {
+    .img-host {
+        width: 32px;
+        height:32px;
+        border-radius: 50%;    
+    }
 }

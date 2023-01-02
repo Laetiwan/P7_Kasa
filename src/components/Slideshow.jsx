@@ -68,10 +68,7 @@ const Slideshow = ({ slides }) => {
     ...slideStyles,
     backgroundImage: `url(${slides[currentIndex]})`,
   };
-
-  console.log("countTab", slides.length)
-  console.log("countTabIndex", currentIndex+1)
-  
+   
   return (
     <div style={sliderStyles}>
       <div>

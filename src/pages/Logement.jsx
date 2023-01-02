@@ -18,16 +18,16 @@ function Logement() {
   return (
     <div>
       <Header />
-      <div className="containerStyles">
+      <div className="containerSlides">
         <Slideshow slides={appartement.pictures} />        
       </div>
-      <div className="containerInfoStyles">
-        <div className="containerInfoStylesL">
+      <div className="containerInfos">
+        <div className="containerInfosL">
           <h3 className='titreText'>{appartement.title}</h3>            
           <p className='soustitreText'>{appartement.location}</p>
           <Tag tag={appartement.tags} />
         </div>
-        <div className="containerInfoStylesR">
+        <div className="containerInfosR">
           <div className='container-host'>
               <h5 className="name-host">{appartement.host.name}</h5> 
               <img src={appartement.host.picture} alt="img-host" className='img-host' />            
@@ -35,11 +35,11 @@ function Logement() {
           <Rating rating={appartement.rating}/>          
         </div>               
       </div>
-      <div className="containerInfoStylesCollapse">
-        <div className="containerInfoStylesCollapseIn">
-          <Collapse title="Description" description={appartement.description}/>
+      <div className="containerInfosCollapse">
+        <div className="containerInfosCollapseDesc">
+          <Collapse title="Description" description={appartement.description} />
         </div>
-        <div className="containerInfoStylesCollapseIn">
+        <div className="containerInfosCollapseEquip">
           <CollapseEquip title="Équipement" description={appartement.equipments}/>
         </div>
       </div>      
