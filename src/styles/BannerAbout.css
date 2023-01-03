@@ -1,14 +1,15 @@
-.banner-about {    
-    width: 80%;
+.banner-about {        
     height: 200px;
-    margin: auto;
     margin-top: 3%;
     background-image: url(../assets/img2_section1.png);
     background-repeat:no-repeat;
     background-position:right;   
     background-color: #dfdbdb;
     background-blend-mode: darken;
-    border-radius: 25px;        
+    border-radius: 25px;      
+    background-size: 100%;
+    margin-left: 4%;
+    margin-right: 4%;  
 }
 
 @media screen and (max-width: 767px) {

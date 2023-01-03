@@ -5,28 +5,17 @@
 .collapse-closed {
     display: flex;
     justify-content: space-between;
-    width: 96%;    
     background: #FF6060;
     border-radius: 5px;    
     margin-top: 5%;
 }
 
-@media screen and (max-width: 767px) {
-    .collapse-closed {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;    
-        background: #FF6060;
-        border-radius: 5px;    
-        margin-top: 5%;   
-    }
-}
-
 .collapse-open {
-    width:92%;
     background: #f7f7f7;
     border-radius: 5px;  
     padding-left: 2%;
+    padding-bottom: 15px;
+    padding-right: 2%;
 }
 
 .collapse-open-text {
@@ -38,6 +27,7 @@
     padding-left: 2%;
     padding-top: 2%;
     line-height: 140%;
+    padding-right: 2%;
 }
 
 .collapse-open-text-equip {
@@ -51,31 +41,16 @@
     padding-top: 2%;
 }
 
-@media screen and (max-width: 767px) {
-    .collapse-open-text {
-        font-size: 12px; 
-        font-weight: 400;
-        padding-right: 3%;   
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .collapse-open-text-equip {
-        font-size: 12px; 
-        font-weight: 400;
-        padding-right: 3%;   
-    }
-}
-
 .collapse-text {
     color:white;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     padding-left: 3%;
+    line-height: 190%;
 }
 
 .collapse-text-equip {
@@ -87,20 +62,6 @@
     padding-left: 3%;
     padding-top: 2%;
     padding-bottom: 2%;
-}
-
-@media screen and (max-width: 767px) {
-    .collapse-text {
-        font-size: 13px; 
-        padding-left: 3%;   
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .collapse-text-equip {
-        font-size: 13px; 
-        padding-left: 3%;   
-    }
 }
 
 .collapse-arrow {
@@ -118,7 +79,55 @@
     padding-right: 2%;
 }
 
+.text-style-normal {
+    font-size: 18px;
+    line-height: 190%;
+}
+
+.text-style-large {
+    font-size: 24px;
+}
+
+.text-style-small {
+    font-size: 14px;
+}
+
 @media screen and (max-width: 767px) {
+    .collapse-closed {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;    
+        background: #FF6060;
+        border-radius: 5px;    
+        margin-top: 5%;   
+    }
+
+    .collapse-open-text {
+        font-size: 12px; 
+        font-weight: 400;
+        padding-right: 3%;   
+    }
+
+    .collapse-open-text-equip {
+        font-size: 12px; 
+        font-weight: 400;
+        padding-right: 3%;   
+    }
+
+    .collapse-text {
+        font-size: 13px; 
+        padding-left: 3%;   
+    }
+    
+    .collapse-text-equip {
+        font-size: 13px; 
+        padding-left: 3%;   
+    }
+
+    .text-style-normal {
+        font-size: 12px;           
+    }
+
     .collapse-arrow {
         font-size: 22px; 
         font-weight: 900;
@@ -126,3 +135,4 @@
         border-radius: 5px;
     }
 }
+

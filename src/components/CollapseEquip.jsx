@@ -4,7 +4,7 @@ import { SlArrowDown, SlArrowUp } from 'react-icons/sl'
 
 function CollapseEquip(props) {
     const [isOpen, setIsOpen] = useState(false)
-    const { title, description } = props
+    const { title, equipments } = props
     
     return isOpen ? (                    
         <div className='collapse-cont'>            
@@ -20,11 +20,9 @@ function CollapseEquip(props) {
                 <button className='collapse-arrow' onClick={() => setIsOpen(true)}><SlArrowUp /></button>
             </div>
             <div className='collapse-open'>
-                {Array.from(description).map(equipText => { 
-                    return (
-                    <p key={description.id} className='collapse-open-text-equip'>{equipText}</p>
-                    );
-                })}
+                {Array.from(equipments).map((equipText, index) => (
+                    <p key={index} className='collapse-open-text-equip'>{equipText}</p>
+                ))}
             </div>
         </div>
     )     

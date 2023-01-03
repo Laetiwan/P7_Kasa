@@ -1,39 +1,19 @@
 .containerSlides {
-    width: 80%;
-    height: 400px;
-    margin: 2% auto;    
-}
-
-@media screen and (max-width: 767px) {
-    .containerSlides {
-        height: 255px;
-        width: 86%;
-        margin: 5% auto 1%;
-    }
+   height: 400px;
+   margin-top: 2%;
+   margin-left: 4%;
+   margin-right: 4%;    
 }
 
 .containerInfos {
     display: flex;
-    width: 80%;    
-    margin: auto;
-}
-
-@media screen and (max-width: 767px) {
-    .containerInfos {
-        flex-direction: column;
-        width: 86%;
-        margin: 1% auto;
-    }
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 .containerInfosL {
     width: 80%;
-}
-
-@media screen and (max-width: 767px) {
-    .containerInfosL {
-        width: 100%;  
-    }
 }
 
 .containerInfosR {
@@ -41,29 +21,11 @@
     margin: 1% auto;
 }
 
-@media screen and (max-width: 767px) {
-    .containerInfosR {
-        width: 100%; 
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;     
-        margin-top: 5%;
-    }
-}
-
 .containerInfosCollapse {
     display: flex;
     justify-content: space-between;
-    width: 80%;
-    margin: auto;
-}
-
-@media screen and (max-width: 767px) {
-    .containerInfosCollapse {
-        margin: 0% auto 5%;   
-        display: block; 
-        width: 86%;
-    }
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 .containerInfosCollapseDesc {
@@ -72,22 +34,9 @@
     justify-content: flex-start; 
 }
 
-@media screen and (max-width: 767px) {
-    .containerInfosCollapseDesc {
-        width: 100%; 
-    }
-}
-
 .containerInfosCollapseEquip {
     width: 50%;    
     margin-left: 3%;
-}
-
-@media screen and (max-width: 767px) {
-    .containerInfosCollapseEquip {
-        width: 100%; 
-        margin-left: 0%;
-    }
 }
 
 .titreText {
@@ -99,13 +48,6 @@
     color: #FF6060;
 }
 
-@media screen and (max-width: 767px) {
-    .titreText {
-        font-size: 18px;  
-        margin-top: 2%;      
-    }
-}
-
 .soustitreText {
     font-family: 'Montserrat';
     font-style: normal;
@@ -113,12 +55,6 @@
     font-size: 18px;
     line-height: 140%;
     color: #FF6060;
-}
-
-@media screen and (max-width: 767px) {
-    .soustitreText {
-        font-size: 14px;        
-    }
 }
 
 .container-host {
@@ -140,12 +76,6 @@
     margin-right: 2%;
 }
 
-@media screen and (max-width: 767px) {
-    .name-host {
-        font-size: 12px;    
-    }
-}
-
 .img-host {
     margin-left: 2%;
     width: 50px;
@@ -154,6 +84,59 @@
 }
 
 @media screen and (max-width: 767px) {
+    .containerSlides {
+        height: 255px;
+        width: 86%;
+        margin: 5% auto 1%;
+    }
+
+    .containerInfos {
+        flex-direction: column;
+        width: 86%;
+        margin: 1% auto;
+    }
+
+    .containerInfosL {
+        width: 100%;  
+    }
+
+    .containerInfosR {
+        width: 100%; 
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;     
+        margin-top: 8%;
+    }
+
+    .containerInfosCollapse {
+        margin: 0% auto 5%;   
+        display: block; 
+        width: 86%;
+    }
+
+    .containerInfosCollapseDesc {
+        width: 100%; 
+    }
+
+    .containerInfosCollapseEquip {
+        width: 100%; 
+        margin-left: 0%;
+    }
+
+    .titreText {
+        font-size: 18px;  
+        margin-top: 2%;      
+    }
+
+    .soustitreText {
+        font-size: 14px;  
+        margin-top: 3%;      
+    }
+
+    .name-host {
+        font-size: 12px;    
+    }
+
     .img-host {
         width: 32px;
         height:32px;

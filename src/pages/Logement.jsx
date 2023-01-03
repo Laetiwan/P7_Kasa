@@ -37,10 +37,10 @@ function Logement() {
       </div>
       <div className="containerInfosCollapse">
         <div className="containerInfosCollapseDesc">
-          <Collapse title="Description" description={appartement.description} />
+          <Collapse textStyle="normal" title="Description" description={appartement.description} />
         </div>
         <div className="containerInfosCollapseEquip">
-          <CollapseEquip title="Équipement" description={appartement.equipments}/>
+          <CollapseEquip title="Équipement" equipments={appartement.equipments}/>
         </div>
       </div>      
       <Footer />   

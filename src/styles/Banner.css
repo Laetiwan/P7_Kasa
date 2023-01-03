@@ -1,23 +1,16 @@
 .banner {    
-    width: 80%;
     height: 200px;
-    margin: auto;
+    margin-left: 4%;
+    margin-right: 4%;
     margin-top: 3%;
     background-image: url(../assets/img_section1.png);
     background-repeat:no-repeat;
-    background-position:right;   
+    background-position:center;  
+    background-size: 100%; 
     background-color: rgba(104, 105, 105, 0.5);
     background-blend-mode: darken;
     border-radius: 25px;  
     background: linear-gradient(90deg, #070707, #0000, 0.9);      
-}
-
-@media screen and (max-width: 767px) {
-    .banner {
-        width: 86%;
-        height:115px;    
-        background-size: cover;      
-    }
 }
 
 h1 {
@@ -33,6 +26,12 @@ h1 {
 }
 
 @media screen and (max-width: 767px) {
+    .banner {
+        width: 86%;
+        height:115px;    
+        background-size: cover;      
+    }
+    
     h1 {
         width: 75%;
         height:115px;     

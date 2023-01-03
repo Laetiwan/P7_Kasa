@@ -3,19 +3,14 @@ import { MdStarRate } from 'react-icons/md'
 
 function Rating(props) {
     let stars = ["", "", "", "", ""]
-    let greystars = 0
     const rating = props
-    console.log("rating", rating)
-    const ratingNb = parseInt(rating.rating)
-    console.log("ratingNb", ratingNb)
-    greystars = 5 - ratingNb
-    console.log("greystars", greystars)    
+    const ratingNb = parseInt(rating.rating)
     console.log(stars.fill("true", 0, ratingNb));
 
     return (
         <div className='container-rating'>
-            {stars.map((rate) => (
-                (rate==='true') ? <MdStarRate className='star' color='#FF6060' /> : <MdStarRate className='star' color='grey' />
+            {stars.map((rate, index) => (
+                (rate==='true') ? <MdStarRate key={index} className='star' color='#FF6060' /> : <MdStarRate key={index} className='star' color='grey' />
             ))}
         </div>  
     )
