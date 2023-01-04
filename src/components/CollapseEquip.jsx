@@ -3,7 +3,7 @@ import '../styles/Collapse.css'
 import { SlArrowDown, SlArrowUp } from 'react-icons/sl'
 
 function CollapseEquip(props) {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(true)
     const { title, equipments } = props
     
     return isOpen ? (                    

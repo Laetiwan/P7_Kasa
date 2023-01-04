@@ -4,7 +4,7 @@ import { SlArrowDown, SlArrowUp } from 'react-icons/sl'
 import { useEffect } from 'react'
 
 function Collapse(props) {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(true)
     const { title, description } = props
     let {textStyle} = props
     useEffect((textStyle) => {
@@ -16,7 +16,7 @@ function Collapse(props) {
     return isOpen ? (                    
         <div className='collapse-cont'>            
             <div className='collapse-closed'>
-                <h2 className='collapse-text'>{title}</h2>  
+                <h2 className={'collapse-text text-style-'+textStyle}>{title}</h2>  
                 <button className='collapse-arrow' onClick={() => setIsOpen(false)}><SlArrowDown /></button>
             </div>            
         </div>
